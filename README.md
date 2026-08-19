@@ -9,8 +9,8 @@ tooling (mutt + msmtp).
 Published to Docker Hub on every push to `main`:
 
 ```
-docker.io/nubons/pcom-brc-postgres-backup:16
-docker.io/nubons/pcom-brc-postgres-backup:latest
+docker.io/nubonativesolution/pcom-brc-postgres-backup:16
+docker.io/nubonativesolution/pcom-brc-postgres-backup:latest
 ```
 
 Architecture: `linux/amd64`.
@@ -31,7 +31,7 @@ completed config, for example:
 ```bash
 docker run --rm \
   -v $PWD/msmtp.config:/root/.config/msmtp/config:ro \
-  docker.io/nubons/pcom-brc-postgres-backup:16 ...
+  docker.io/nubonativesolution/pcom-brc-postgres-backup:16 ...
 ```
 
 ## CI/CD
